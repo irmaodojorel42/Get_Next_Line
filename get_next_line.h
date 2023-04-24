@@ -6,7 +6,7 @@
 /*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 16:04:10 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/24 18:40:30 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/24 23:39:00 by ceribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 int     ft_strlen(char *str);
 char    *get_next_line(int fd);
 char	*ft_strjoin(char *s1, char *s2);
+int 	ft_find_nl(char *str);
 
 #endif
 
