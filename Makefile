@@ -6,7 +6,7 @@
 #    By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/24 16:04:12 by ceribeir          #+#    #+#              #
-#    Updated: 2023/04/24 16:13:35 by ceribeir         ###   ########.fr        #
+#    Updated: 2023/04/24 17:42:00 by ceribeir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,3 +26,18 @@ OBJ = $(SRC:.c=.o)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
+
+all: $(NAME)
+
+clean:
+	$(RM) $(OBJ)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+run: re
+	$(RM) a.out
+	main.c -L. -lgetnextline
+	./a.out
