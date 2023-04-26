@@ -6,24 +6,24 @@
 /*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 16:04:03 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/26 19:13:36 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/26 21:57:19 by ceribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-    int i;
-    
-    i = 0;
+	int	i;
+
+	i = 0;
 	if (!str)
 		return (0);
-	if (str[0] == '\n')
+	while (str[i] && str[i] != '\n')
 		i++;
-    while (str[i] && str[i] != '\n')
-        i++;
-    return (i);
+	if ((str[i]) == '\n')
+		i++;
+	return (i);
 }
 
 char	*ft_strjoin(char *s1, char *s2)
@@ -47,12 +47,11 @@ char	*ft_strjoin(char *s1, char *s2)
 	while (s2[++j])
 	{
 		result[i++] = s2[j];
-		if (s2[j] == '\n' || s2[j] == 0)
+		if (s2[j] == '\n')
 			break ;
 	}
 	result[i] = '\0';
-	if (s1)
-		free(s1);
+	free(s1);
 	return (result);
 }
 
