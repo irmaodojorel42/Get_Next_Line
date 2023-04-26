@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:56:24 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/26 14:36:38 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/26 18:52:54 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ int main()
     while (str)
     {    
         str = get_next_line(fd);
-        //printf("%s\n", str);
+        printf("%s\n", str);
+        free(str);
     }
     return (0);
 }
