@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/24 16:04:12 by ceribeir          #+#    #+#              #
-#    Updated: 2023/04/24 23:45:12 by ceribeir         ###   ########.fr        #
+#    Updated: 2023/04/26 13:57:12 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,4 +40,4 @@ re: fclean all
 
 run: re
 	$(CC) $(CFLAGS) main.c -L. -lgetnextline
-	./a.out
+	

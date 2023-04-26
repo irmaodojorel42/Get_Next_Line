@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 16:04:03 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/25 00:28:17 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/26 14:20:42 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ int ft_strlen(char *str)
     int i;
     
     i = 0;
-    while (str[i])
+	if (!str)
+		return (0);
+    while (str[i] && str[i] != '\n')
         i++;
     return (i);
 }
@@ -43,7 +45,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	while (s2[++j])
 	{
 		result[i++] = s2[j];
-		if (s2[j] == '\n')
+		if (s2[j] == '\n' || s2[j] == 0)
 			break ;
 	}
 	result[i] = '\0';

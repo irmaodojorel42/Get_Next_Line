@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:56:24 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/24 23:30:21 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/26 14:36:38 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,11 @@ int main()
     char    *str;
     
     fd = open("test.txt", O_RDONLY);
-    str = get_next_line(fd);
-    printf("%s\n", str);
+    str = "";
+    while (str)
+    {    
+        str = get_next_line(fd);
+        //printf("%s\n", str);
+    }
     return (0);
 }
