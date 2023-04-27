@@ -6,7 +6,7 @@
 /*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 16:04:10 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/26 22:26:48 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/27 18:40:07 by ceribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 2
+#  define BUFFER_SIZE 3
 # endif
 
 # include <fcntl.h>

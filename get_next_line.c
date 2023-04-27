@@ -6,7 +6,7 @@
 /*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 16:04:06 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/26 23:53:26 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/27 21:07:01 by ceribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	buffer[BUFFER_SIZE];
+	static char	buffer[BUFFER_SIZE + 1];
 	int			i;
 
 	i = 1;

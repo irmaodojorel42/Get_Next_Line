@@ -6,11 +6,11 @@
 /*   By: ceribeir <ceribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 16:04:03 by ceribeir          #+#    #+#             */
-/*   Updated: 2023/04/26 23:27:47 by ceribeir         ###   ########.fr       */
+/*   Updated: 2023/04/27 21:41:54 by ceribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	ft_strlen(char *str)
 {
